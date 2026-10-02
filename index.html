@@ -1,75 +1,275 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title>Joseph Abadilla | Accounting Portfolio</title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.7">
-  <style type="text/css">
-    body {background-color: #f2f5f9}
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 11.4px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #172b4c}
-    p.p3 {margin: 0.0px 0.0px 18.0px 0.0px; text-align: center; font: 13.2px Helvetica; color: #3b4350; -webkit-text-stroke: #3b4350}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Helvetica; color: #172b4c; -webkit-text-stroke: #172b4c}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px Helvetica; color: #172b4c; -webkit-text-stroke: #172b4c}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.8px Helvetica; color: #2a3140; -webkit-text-stroke: #2a3140}
-    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; color: #181e2a; -webkit-text-stroke: #181e2a}
-    p.p10 {margin: 0.0px 0.0px 8.0px 0.0px; font: 10.8px Helvetica; color: #585e6d; -webkit-text-stroke: #585e6d}
-    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.8px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p12 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.8px Helvetica; color: #585e6d; -webkit-text-stroke: #585e6d}
-    li.li8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; color: #181e2a; -webkit-text-stroke: #181e2a}
-    span.s1 {font-kerning: none}
-    span.s2 {font: 12.0px Helvetica; font-kerning: none; color: #181e2a; -webkit-text-stroke: 0px #181e2a}
-    span.s3 {font-kerning: none; background-color: #ffffff}
-    span.s4 {text-decoration: underline ; font-kerning: none; background-color: #ffffff}
-    span.s5 {font-kerning: none; color: #181e2a; background-color: #ffffff; -webkit-text-stroke: 0px #181e2a}
-    span.s6 {text-decoration: underline ; font-kerning: none; color: #172b4c; -webkit-text-stroke: 0px #172b4c}
-    span.s7 {background-color: #ffffff; -webkit-text-stroke: 0px #000000}
-    span.s8 {font-kerning: none; background-color: #172b4c}
-    ul.ul1 {list-style-type: disc}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- EDIT: replace "Your Name" with your name -->
+  <title>Your Name | Accounting Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #1f2937;
+      background: #f5f7fa;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: #1e3a5f;
+      padding: 14px 20px;
+      text-align: center;
+      z-index: 10;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 14px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover { text-decoration: underline; }
+
+    header {
+      background: #ffffff;
+      text-align: center;
+      padding: 60px 20px 50px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      color: #1e3a5f;
+      margin-bottom: 6px;
+    }
+
+    header .subtitle {
+      font-size: 1.1rem;
+      color: #4b5563;
+      margin-bottom: 18px;
+    }
+
+    .contact a {
+      color: #1e3a5f;
+      margin: 0 10px;
+      font-weight: 600;
+    }
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    section {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 32px;
+      margin: 24px 0;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+      scroll-margin-top: 70px;
+    }
+
+    section h2 {
+      color: #1e3a5f;
+      font-size: 1.5rem;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #c9a227;
+      display: inline-block;
+    }
+
+    .statement {
+      font-size: 1.15rem;
+      color: #374151;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .skills-grid h3 {
+      font-size: 1rem;
+      color: #1e3a5f;
+      margin-bottom: 8px;
+    }
+
+    .skills-grid ul { list-style: none; }
+
+    .skills-grid li {
+      padding: 4px 0 4px 16px;
+      position: relative;
+    }
+
+    .skills-grid li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 13px;
+      width: 6px;
+      height: 6px;
+      background: #c9a227;
+      border-radius: 50%;
+    }
+
+    .project {
+      border-left: 4px solid #1e3a5f;
+      padding: 4px 0 4px 18px;
+      margin-bottom: 26px;
+    }
+
+    .project:last-child { margin-bottom: 0; }
+
+    .project h3 {
+      font-size: 1.15rem;
+      margin-bottom: 4px;
+    }
+
+    .project .tools {
+      font-size: 0.9rem;
+      color: #6b7280;
+      margin-bottom: 8px;
+    }
+
+    .project a.button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background: #1e3a5f;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .project a.button:hover { background: #2c5282; }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #6b7280;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.9rem; }
+      section { padding: 22px; }
+      nav a { margin: 0 8px; }
+    }
   </style>
 </head>
 <body>
-<p class="p1"><span class="s1"><b>About</b></span><span class="s2"> </span><span class="s1"><b>Skills</b></span><span class="s2"> </span><span class="s1"><b>Projects</b><b></b></span></p>
-<h1 style="margin: 0.0px 0.0px 6.0px 0.0px; text-align: center; font: 28.8px Helvetica; color: #172b4c; -webkit-text-stroke: #172b4c"><span class="s3"><b>Joseph Abadilla</b><b></b></span></h1>
-<p class="p3"><span class="s3">Accounting Student, Rutgers University New Brunswick</span></p>
-<p class="p4"><span class="s4"><a href="mailto:jta112@scarletmail.rutgers.edu"><b>Email</b></a></span><span class="s5"> <a href="www.linkedin.com/in/joseph-abadilla-a64707226"><span class="s6"><b>LinkedIn</b><b></b></span></a></span></p>
-<p class="p5"><span class="s3"><b>About Me</b><b></b></span></p>
-<p class="p6"><span class="s3">Rutgers accounting student and Beta Alpha Psi member pursuing a career in audit, bringing a detail-first approach built through years of reconciling daily cash and card transactions.</span></p>
-<p class="p5"><span class="s3"><b>Skills</b><b></b></span></p>
-<h3 style="margin: 0.0px 0.0px 8.0px 0.0px; font: 12.0px Helvetica; color: #172b4c; -webkit-text-stroke: #172b4c"><span class="s3"><b>Technical</b><b></b></span></h3>
-<ul class="ul1">
-  <li class="li8"><span class="s7"></span><span class="s3">Microsoft Excel (pivot tables, formulas)</span></li>
-  <li class="li8"><span class="s7"></span><span class="s3">DataSnipper</span></li>
-  <li class="li8"><span class="s7"></span><span class="s3">Google Sheets</span></li>
-  <li class="li8"><span class="s7"></span><span class="s3">Microsoft Word and PowerPoint</span></li>
-  <li class="li8"><span class="s7"></span><span class="s3">GitHub and HTML</span></li>
-</ul>
-<h3 style="margin: 0.0px 0.0px 8.0px 0.0px; font: 12.0px Helvetica; color: #172b4c; -webkit-text-stroke: #172b4c"><span class="s3"><b>Accounting Knowledge</b><b></b></span></h3>
-<ul class="ul1">
-  <li class="li8"><span class="s7"></span><span class="s3">Auditing Concepts</span></li>
-  <li class="li8"><span class="s7"></span><span class="s3">Audit Analytics</span></li>
-  <li class="li8"><span class="s7"></span><span class="s3">Financial Accounting</span></li>
-  <li class="li8"><span class="s7"></span><span class="s3">Managerial Accounting</span></li>
-  <li class="li8"><span class="s7"></span><span class="s3">Income Tax Accounting</span></li>
-</ul>
-<h3 style="margin: 0.0px 0.0px 8.0px 0.0px; font: 12.0px Helvetica; color: #172b4c; -webkit-text-stroke: #172b4c"><span class="s3"><b>Professional</b><b></b></span></h3>
-<ul class="ul1">
-  <li class="li8"><span class="s7"></span><span class="s3">Cash handling and reconciliation</span></li>
-  <li class="li8"><span class="s7"></span><span class="s3">Attention to detail</span></li>
-  <li class="li8"><span class="s7"></span><span class="s3">Team leadership</span></li>
-  <li class="li8"><span class="s7"></span><span class="s3">Resolving discrepancies</span></li>
-  <li class="li8"><span class="s7"></span><span class="s3">Time management</span></li>
-</ul>
-<p class="p5"><span class="s3"><b>Projects</b><b></b></span></p>
-<h3 style="margin: 0.0px 0.0px 4.0px 0.0px; font: 13.8px Helvetica; color: #181e2a; -webkit-text-stroke: #181e2a"><span class="s3"><b>Expense Reimbursement Audit</b><b></b></span></h3>
-<p class="p10"><span class="s3">Tools: DataSnipper, Microsoft Excel, Microsoft Word</span></p>
-<p class="p8"><span class="s3">Audited a consultant's monthly time and expense report using DataSnipper, vouching every expense and mileage claim to its supporting documents. I identified 15 fraud and compliance risks, documented five findings (including a dinner charge that did not agree to its receipt and a mileage claim with no supporting map or logged hours), and recommended follow-up audit tests in a formal memo.</span></p>
-<p class="p11"><span class="s8"><a href="file:///Users/rgbturtwig/Documents/School/2026_Fall/Building%20Your%20Brand/audit-memo.pdf"><b>View Audit Memo (PDF)</b><span class="s1"><b></b></span></a></span></p>
-<h3 style="margin: 0.0px 0.0px 4.0px 0.0px; font: 13.8px Helvetica; color: #181e2a; -webkit-text-stroke: #181e2a"><span class="s3"><b>Personal Portfolio Website</b><b></b></span></h3>
-<p class="p10"><span class="s3">Tools: HTML, CSS, GitHub Pages</span></p>
-<p class="p8"><span class="s3">Designed and published this portfolio site to present my skills and work to employers, using HTML and CSS and hosting it on GitHub Pages.</span></p>
-<p class="p11"><span class="s8"><a href="https://github.com/joe-abadilla/joe-abadilla.github.io"><b>View Code on GitHub</b><span class="s1"><b></b></span></a></span></p>
-<p class="p12"><span class="s1">© 2026 Joseph Abadilla</span></p>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+  </nav>
+
+  <header>
+    <!-- EDIT: your name -->
+    <h1>Your Name</h1>
+    <p class="subtitle">Accounting Student, Rutgers University New Brunswick</p>
+    <p class="contact">
+      <!-- EDIT: replace with your email and LinkedIn URL -->
+      <a href="mailto:you@example.com">Email</a>
+      <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+    </p>
+  </header>
+
+  <main>
+
+    <!-- SECTION 1: PERSONAL STATEMENT -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p class="statement">
+        Rutgers accounting student and Beta Alpha Psi member pursuing a career in audit,
+        bringing a detail-first approach built through years of reconciling daily cash
+        and card transactions.
+      </p>
+    </section>
+
+    <!-- SECTION 2: SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div>
+          <h3>Technical</h3>
+          <ul>
+            <li>Microsoft Excel (pivot tables, formulas)</li>
+            <li>DataSnipper</li>
+            <li>Google Sheets</li>
+            <li>Microsoft Word and PowerPoint</li>
+            <li>GitHub and HTML</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Accounting Knowledge</h3>
+          <ul>
+            <li>Auditing Concepts</li>
+            <li>Audit Analytics</li>
+            <li>Financial Accounting</li>
+            <li>Managerial Accounting</li>
+            <li>Income Tax Accounting</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Professional</h3>
+          <ul>
+            <li>Cash handling and reconciliation</li>
+            <li>Attention to detail</li>
+            <li>Team leadership</li>
+            <li>Resolving discrepancies</li>
+            <li>Time management</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Expense Reimbursement Audit</h3>
+        <p class="tools">Tools: DataSnipper, Microsoft Excel, Microsoft Word</p>
+        <p>
+          Audited a consultant's monthly time and expense report using DataSnipper,
+          vouching every expense and mileage claim to its supporting documents. I
+          identified 15 fraud and compliance risks, documented five findings (including
+          a dinner charge that did not agree to its receipt and a mileage claim with no
+          supporting map or logged hours), and recommended follow-up audit tests in a
+          formal memo.
+        </p>
+        <!-- This file name must match the PDF you upload EXACTLY -->
+        <a class="button" href="audit-memo.pdf" target="_blank">View Audit Memo (PDF)</a>
+      </div>
+
+      <div class="project">
+        <h3>Personal Portfolio Website</h3>
+        <p class="tools">Tools: HTML, CSS, GitHub Pages</p>
+        <p>
+          Designed and published this portfolio site to present my skills and work to
+          employers, using HTML and CSS and hosting it on GitHub Pages.
+        </p>
+        <!-- EDIT: replace USERNAME (both places) with your GitHub username -->
+        <a class="button" href="https://github.com/USERNAME/USERNAME.github.io" target="_blank">View Code on GitHub</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <!-- EDIT: your name -->
+    <p>&copy; 2026 Your Name</p>
+  </footer>
+
 </body>
 </html>
